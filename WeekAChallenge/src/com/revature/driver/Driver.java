@@ -39,8 +39,9 @@ public class Driver {
 		
 		//Prints even numbers, my favorite and least favorite numbers, and all numbers divisible by 5 up to 100
 		Integer num = new Integer(100);
+		
 		for(int j = 0; j <= (int)num; j++) {
-			if (j % 2 == 0) {
+			if (j % 2 == 0 && j != 12) {
 				System.out.println(j);
 			}
 			else if (j % 5 == 0) {
@@ -74,6 +75,14 @@ public class Driver {
 		System.out.println(m.getGenre() + " " + m.getGenre2());
 		m.setGenre("Horror", "Comedy", "Mystery");
 		System.out.println(m.getGenre() + " " + m.getGenre2() + " " + m.getGenre3());
+		
+		
+		//for each loop that prints out genres for a given array
+		String[] genres = {m.getGenre(), m.getGenre2(), m.getGenre3()};
+		
+		for(String z : genres) {
+			System.out.println(z.toCharArray());
+		}
 		
 		
 	}
